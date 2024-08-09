@@ -22,6 +22,7 @@ module.exports = withMT({
         marquee2: "marquee2 20s linear infinite",
         marqueeReverse: "marqueeReverse 20s linear infinite",
         marqueeReverse2: "marqueeReverse2 20s linear infinite",
+        blackHandMovement: 'blackHandMovement 10s linear infinite '
       },
       keyframes: {
         marquee: {
@@ -39,6 +40,11 @@ module.exports = withMT({
         marqueeReverse2: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        blackHandMovement: {
+          "0%": { transform: "translateX(0%) translateY(0%)  " },
+          "40%": { transform: "translateX(-10%) translateY(10%) " },
+          "100%": { transform: "translateX(0%) translateY(0%) " },
         },
       },
     },
